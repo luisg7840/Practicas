@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*DECLARACION DE VARIABLE CSS*/
+:root{
+    --primary-color: #061E29;
+    --secundary-color: #1D546D;
+    --white: #ffff;
+    --white-font: #F3F4F4;
+
+}
+/*FIN DECLARION DE VARIABLES*/
+body{
+    background-color:var(--primary-color);
+    color:var(--secundary-color);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    /*background-color: #061e29;  fondo menu*/
+    padding: 0;
+    margin: 0;
+}
+.navbar-list{
+    display: flex;
+    gap: 20px
+}/*
+.navbar-list li{
+    border-right: 1px solid aqua;
+}*/
+.navbar-list a{
+    /*display: block;*/
+    font-size: 16px;
+    color: var(--white-font); /*color de letras*/
+    padding: 0.5rem 0.5rem;
+}
+.navbar-list a:hover{
+    color: aqua; /*color mouse por arriba*/
+}
+.logo{
+    width: 250px;
+}
+.quienes-somos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    color: var(--white-font);
+}
+.padding-40{
+    padding: 0px 40px 0 0;
+}
+.padding-20{
+    padding: 20px 0px 0px 0px;
+}
+.img-responsive{
+    width: 600px;/*unidades absolutas*/
+    border: 1px solid white;
+    border-radius: 25px;
+}
+.quienes-somos h2{
+    color: aqua; /*color de la tipografia*/
+    font-size: 36px; /*tamaño de la fuente*/
+    font-weight: 800; /*peso, es decir que tan gordita es la letra*/
+}
+.servicios{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.center{
+    text-align: center;
+}
