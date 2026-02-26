@@ -12,7 +12,7 @@
 html{
     box-sizing: border-box; /*hace que no se desborde la pagina*/
 }
-*,*:before, *after{
+*,*:before, *:after{
     box-sizing: inherit;
 }
 /*FIN DECLARION DE VARIABLES*/
@@ -22,6 +22,8 @@ body{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     line-height: 1.5rem;
+    margin: 0;
+    padding: 0;
 }
 ul{
     list-style: none;
@@ -119,4 +121,53 @@ a:hover{
     background-color: var(--primary-color);
     padding: 10px 30px;
     font-size: 10px;
+}
+/*CONTACTO*/
+.contacto-container{
+    background-color: aqua;
+    padding: 50px 0px;
+}
+.contacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+input[type="text"],[type="email"],[type="date"]{
+    width: 100%;
+    border: 1px solid var(--black-dark);
+    color: var(lack-dark);
+    border-radius: 12px;
+    padding: 5px;
+}
+label{
+    width: 100%;
+    font-size: 16px;
+    /*padding: 5px;*/
+}
+select{
+     width: 100%;
+    border: 1px solid var(--black-dark);
+    color: var(lack-dark);
+    border-radius: 12px;
+    padding: 5px;
+}
+textarea{
+     width: 100%;
+    border: 1px solid var(--black-dark);
+    color: var(lack-dark);
+    border-radius: 12px;
+    padding: 5px;
+}
+input[type="submit"]{
+    background-color:var(--secundary-color);
+    color: var(--white);
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+input[type="submit"]:hover{
+    background-color: aqua;
+    color: var(--white);
+}
+.contacto .col{
+    padding: 30px;
 }

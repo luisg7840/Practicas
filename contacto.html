@@ -22,59 +22,56 @@
             </ul>
         </nav>
     </header>
-</section>
-<section class="quienes-somos">
-    <div class="col padding-40">
-        <img src="assets/images/team.jpg" alt="team" class="img-responsive">
-    </div>
-    <div class="col padding-20">
-        <h2>Quienes somos</h2>
-        <p>Somos un equipo de jovenes desarrolladores amantes de la tecnologia. Diseñamos soluciones a medida, entre ellas:</p>
-        <ul>
-            <li><i class="fa-solid fa-circle-check"></i> Sitios web institucionales</li>
-            <li><i class="fa-solid fa-circle-check"></i> E-commerce</li>
-            <li><i class="fa-solid fa-circle-check"></i> Landing Page</li>
-            <li><i class="fa-solid fa-circle-check"></i> Apps</li>
-        </ul>
-    </div>
-</section>
-<section class="servicios-container center">
-    <h2>Conoce nuestros servicios</h2>
-    <p>Desarrollamos a medida de tus necesidades tecnologicas</p>
-<div class="servicios">
-    <div class="col">
-        <i class="fa-solid fa-globe"></i>
-        <h3>Sitios web</h3>
-        <p>Desarrollamos sitios web a medida</p>
-    </div>
-    <div class="col">
-        <i class="fa-solid fa-cart-shopping"></i>
-        <h3>E-commers</h3>
-        <p>Creamos tu tienda en linea</p>
-    </div>
-    <div class="col">
-        <i class="fa-solid fa-house"></i>
-        <h3>Landing Page</h3>
-        <p>La pagina de aterrizaje para que vendas online</p>
-    </div>
-    <div class="col">
-        <i class="fa-brands fa-app-store-ios"></i>
-        <h3>Desarrollo de apps</h3>
-        <p>Tanto para ios como para android</p>
-    </div>
-    <div class="col">
-        <i class="fa-solid fa-screwdriver-wrench"></i>
-        <h3>Mantenimiento</h3>
-        <p>Realizamos el mantenimiento de tus sistemas</p>
-    </div>
-    <div class="col">
-        <i class="fa-solid fa-chalkboard-user"></i>
-        <h3>Formacion</h3>
-        <p>Todo en tecnologia en un solo lugar</p>
-    </div>
-</div>
-</section>
-<footer class="footer-container">
+    <section class="contacto-container">
+        <h1 class="center">Contactos</h1>
+        <p class="center">Estamos aqui para brindarte soluciones tecnologicas a medida.</p>
+        <div class="contacto">
+        <div class="col">
+            <p>Deja tu mensaje y en breve te contestamos</p>
+            <p>Puedes visitarnos en alguna de nuestras sedes</p>
+            <ul>
+                <li><i class="fa-solid fa-location-dot"></i> Maracay</li>
+                <li><i class="fa-solid fa-location-dot"></i> San Juan de Los Morros</li>
+            </ul>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1743.1295466562126!2d-67.58639260767346!3d10.246327205385226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2aa9a22ae8d705%3A0xc93b6fc74ba9a8f3!2sAcademia%20Endigital!5e0!3m2!1ses-419!2sve!4v1772117531513!5m2!1ses-419!2sve" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col">
+            <form name="contacto" action="#" method="post">
+                <label> Nombre</label>
+                <input type="text" placeholder="Escribe tu nombre">
+                <label>Apellido</label>
+                <input type="text" placeholder="Escribe tu apellido">
+                <label>Email</label>
+                <input type="email" placeholder="Escribe tu correo electronico">
+                <label>ciudad</label>
+                <select name="ciudad">
+                    <option value="Selecciona una ciudad"></option>
+                    <option value="maracay">Maracay</option>
+                    <option value="caracas">Caracas</option>
+                    <option value="valencia">Valencia</option>
+                    <option value="sjm">San Juan de Los Morros</option>
+                </select>
+                <label>Fecha de Nacimiento</label>
+                <input type="date" name="fecha-nacimiento">
+                <label> Sexo</label>
+                <select name="sexo" id="sexo">
+                    <option value="ninguno">Seleccione una opcion</option>
+                    <option value="f">Femenino</option>
+                    <option value="m">Masculino</option>
+                    <option value="n-a">No quiero decirlo</option>
+                </select>
+
+                <label> Mensaje</label>
+                <textarea rows="4" cols="50" name="mensaje"></textarea>
+                <input type="submit" value="Contactar">
+            </form>
+        </div>
+    </section>
+
+
+
+
+    <footer class="footer-container">
     <article class="footer">
         <div class="col">
             <img src="assets/images/logo-endigital.png" class="logo-footer" alt="logo-footer">
@@ -116,5 +113,3 @@
         <p>Todos los derechos reservados <i class="fa-regular fa-copyright"></i>2026. Sitio web desarrollado por: Luis Gonzalez</p>
     </article>
 </footer>
-</body>
-</html>
