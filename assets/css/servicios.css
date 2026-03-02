@@ -1,0 +1,9 @@
+.servicios-container{
+    background-color: rgb(116, 218, 247);
+    padding: 80px 30px;
+}
+.servicios{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+}

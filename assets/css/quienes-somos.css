@@ -1,0 +1,22 @@
+.quienes-somos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    color: var(--white-font);
+}
+.padding-40{
+    padding: 0px 40px 0 0;
+}
+.padding-20{
+    padding: 20px 0px 0px 0px;
+}
+.img-responsive{
+    width: 600px;/*unidades absolutas*/
+    border: 1px solid white;
+    border-radius: 25px;
+}
+.quienes-somos h2{
+    color: aqua; /*color de la tipografia*/
+    font-size: 36px; /*tamaño de la fuente*/
+    font-weight: 800; /*peso, es decir que tan gordita es la letra*/
+}

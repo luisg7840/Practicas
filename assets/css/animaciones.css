@@ -1,0 +1,90 @@
+.box1{
+    width: 150px;
+    height: 150px;
+    color: aqua;
+    animation-name: box1;
+    animation-duration: 10s; /*duracion*/
+    /*animation-iteration-count: infinite; /*cuantas veces deseo que se repita*/
+    animation-delay: 1s; /*retardo*/
+    position: relative;
+    margin: 15px;
+    font-size: 100px;
+}
+.box2{
+    width: 150px;
+    height: 150px;
+    color: aqua;
+    animation-name: box2;
+    animation-duration: 11s; /*duracion*/
+    /*animation-iteration-count: infinite; /*cuantas veces deseo que se repita*/
+    animation-delay: 1s; /*retardo*/
+    position: relative;
+    margin: 15px;
+    font-size: 100px;
+}
+.box3{
+    width: 150px;
+    height: 150px;
+    color: aqua;
+    animation-name: box3;
+    animation-duration: 12s; /*duracion*/
+    /*animation-iteration-count: infinite; /*cuantas veces deseo que se repita*/
+    animation-delay: 1s; /*retardo*/
+    position: relative;
+    margin: 15px;
+    font-size: 100px;
+}
+.box4{
+    width: 150px;
+    height: 150px;
+    color: aqua;
+    animation-name: box4;
+    animation-duration: 13s; /*duracion*/
+    /*animation-iteration-count: infinite; /*cuantas veces deseo que se repita*/
+    animation-delay: 1s; /*retardo*/
+    position: relative;
+    margin: 15px;
+    font-size: 100px;
+}
+/*
+@keyframes box{
+    from{background-color: black;}
+    to{background-color: blueviolet;}
+}*/
+/*
+@keyframes box{
+    0%{background-color: blue;}
+    25%{background-color: red;}
+    50%{background-color: aqua;}
+    75%{background-color: blueviolet;}
+    100%{background-color: cadetblue;}
+}*/
+@keyframes box1{
+    0%{color: blue; left: 0; top: 0}
+    25%{color: red; left: 900px; top: 0}
+    50%{color: aqua; left: 0px; top: 0px}
+    75%{color: blueviolet; left: 0px; top: 0px;}
+    100%{color: cadetblue; left: 0px; top: 0px;}
+
+}
+@keyframes box2{
+    0%{color: blue; left: 0; top: 0}
+    25%{color: red; left: 900px; top: 0}
+    50%{color: aqua; left: 0px; top: 0px}
+    75%{color: blueviolet; left: 0px; top: 0px;}
+    100%{color: cadetblue; left: 0px; top: 0px;}
+}
+@keyframes box3{
+    0%{color: blue; left: 0; top: 0}
+    25%{color: red; left: 900px; top: 0}
+    50%{color: aqua; left: 0px; top: 0px}
+    75%{color: blueviolet; left: 0px; top: 0px;}
+    100%{color: cadetblue; left: 0px; top: 0px;}
+}
+@keyframes box4{
+    0%{color: blue; left: 0; top: 0}
+    25%{color: red; left: 900px; top: 0}
+    50%{color: aqua; left: 0px; top: 0px}
+    75%{color: blueviolet; left: 0px; top: 0px;}
+    100%{color: cadetblue; left: 0px; top: 0px;}
+}

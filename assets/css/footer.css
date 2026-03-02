@@ -1,0 +1,27 @@
+.footer-container{
+    background-color: var(--black-dark);
+    padding: 50px 0px 0px 0px;
+    font-size: 12px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 0px 30px;
+}
+.footer h3{
+    color: var(--secundary-color)
+}
+.logo-footer{
+    max-width: 200px;
+}
+.social-icons{
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+}
+.copyright{
+    background-color: var(--primary-color);
+    padding: 10px 30px;
+    font-size: 10px;
+}

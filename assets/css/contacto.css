@@ -1,0 +1,49 @@
+/*CONTACTO*/
+.contacto-container{
+    background-color: aqua;
+    padding: 50px 0px;
+}
+.contacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+input[type="text"],[type="email"],[type="date"]{
+    width: 100%;
+    border: 1px solid var(--black-dark);
+    color: var(lack-dark);
+    border-radius: 12px;
+    padding: 5px;
+}
+label{
+    width: 100%;
+    font-size: 16px;
+    /*padding: 5px;*/
+}
+select{
+     width: 100%;
+    border: 1px solid var(--black-dark);
+    color: var(lack-dark);
+    border-radius: 12px;
+    padding: 5px;
+}
+textarea{
+     width: 100%;
+    border: 1px solid var(--black-dark);
+    color: var(lack-dark);
+    border-radius: 12px;
+    padding: 5px;
+}
+input[type="submit"]{
+    background-color:var(--secundary-color);
+    color: var(--white);
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+input[type="submit"]:hover{
+    background-color: aqua;
+    color: var(--white);
+}
+.contacto .col{
+    padding: 30px;
+}
