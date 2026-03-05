@@ -6,6 +6,11 @@
     <title>Endigital</title>
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/fontawesome-free-7.1.0-web/css/all.css">
+      <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 </head>
 <body>
 <section>
@@ -22,12 +27,21 @@
             </ul>
         </nav>
     </header>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="assets/images/slider1.jpg" style="width:100%">
+  <img class="mySlides" src="assets/images/slider2.jpg" style="width:100%">
+  <img class="mySlides" src="assets/images/slider3.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
 </section>
 <section class="quienes-somos">
-    <div class="col padding-40">
+    <div class="col padding-40 animate__animated animate__backInLeft animate__delay-2s	2s">
         <img src="assets/images/team.jpg" alt="team" class="img-responsive">
     </div>
-    <div class="col padding-20">
+    <div class="col padding-20 animate__animated animate__backInRight animate__delay-2s	2s">
         <h2>Quienes somos</h2>
         <p>Somos un equipo de jovenes desarrolladores amantes de la tecnologia. Diseñamos soluciones a medida, entre ellas:</p>
         <ul>
@@ -36,38 +50,44 @@
             <li><i class="fa-solid fa-circle-check"></i> Landing Page</li>
             <li><i class="fa-solid fa-circle-check"></i> Apps</li>
         </ul>
+       <!-- <video width="400" controls>
+  <source src="mov_bbb.mp4" type="video/mp4">
+  <source src="mov_bbb.ogg" type="video/ogg">
+  Your browser does not support HTML video.
+</video> -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2gYqEi8-am4?si=XPUwX0zfQsCDZ9PJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 </section>
-<section class="servicios-container center">
+<section class="servicios-container center animate__animated animate__fadeInDown animate__delay-3s	3s">
     <h2>Conoce nuestros servicios</h2>
     <p>Desarrollamos a medida de tus necesidades tecnologicas</p>
 <div class="servicios">
-    <div class="col">
+    <div class="col animate__animated animate__backInLeft animate__delay-4s	4s">
         <i class="fa-solid fa-globe"></i>
         <h3>Sitios web</h3>
         <p>Desarrollamos sitios web a medida</p>
     </div>
-    <div class="col">
+    <div class="col animate__animated animate__fadeInUp animate__delay-4s	4s">
         <i class="fa-solid fa-cart-shopping"></i>
         <h3>E-commers</h3>
         <p>Creamos tu tienda en linea</p>
     </div>
-    <div class="col">
+    <div class="col animate__animated animate__backInRight animate__delay-4s	4s">
         <i class="fa-solid fa-house"></i>
         <h3>Landing Page</h3>
         <p>La pagina de aterrizaje para que vendas online</p>
     </div>
-    <div class="col">
+    <div class="col animate__animated animate__backInLeft animate__delay-4s	   4s">
         <i class="fa-brands fa-app-store-ios"></i>
         <h3>Desarrollo de apps</h3>
         <p>Tanto para ios como para android</p>
     </div>
-    <div class="col">
+    <div class="col animate__animated animate__fadeInUp animate__delay-4s	4s">
         <i class="fa-solid fa-screwdriver-wrench"></i>
         <h3>Mantenimiento</h3>
         <p>Realizamos el mantenimiento de tus sistemas</p>
     </div>
-    <div class="col">
+    <div class="col animate__animated animate__backInRight animate__delay-4s	4s">
         <i class="fa-solid fa-chalkboard-user"></i>
         <h3>Formacion</h3>
         <p>Todo en tecnologia en un solo lugar</p>
@@ -116,5 +136,25 @@
         <p>Todos los derechos reservados <i class="fa-regular fa-copyright"></i>2026. Sitio web desarrollado por: Luis Gonzalez</p>
     </article>
 </footer>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
 </body>
 </html>
